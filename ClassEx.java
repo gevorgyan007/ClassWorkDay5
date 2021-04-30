@@ -9,21 +9,20 @@ public class ClassEx {
 
         int numCheck = scanner.nextInt();
 
+        int numCh = (numCheck +45)/45;
 
-
-        switch ((numCheck > 0 && numCheck<45) ? 1:(numCheck > 45 && numCheck<90)? 2:(numCheck > 90 && numCheck<135)?3:10) {
+        switch (numCh) {
             case 1:
-                System.out.println("(0,45)");
+                System.out.println("(0,90)");
                 break;
             case 2:
-                System.out.println("(45,90)");
+                System.out.println("(90,180)");
                 break;
             case 3:
-                System.out.println("(90,135)");
+                System.out.println("(180,270)");
                 break;
             default:
-                System.out.printf("wrong range");
+                System.out.println("wrong range");
         }
-
     }
 }
