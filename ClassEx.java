@@ -9,8 +9,9 @@ public class ClassEx {
 
         int numCheck = scanner.nextInt();
 
+        int numCh = (numCheck +45)/45;
 
-        switch ((numCheck > 0 && numCheck < 99) ? 1 : (numCheck > 90 && numCheck < 180) ? 2 : (numCheck > 180 && numCheck < 270) ? 3 : 10) {
+        switch (numCh) {
             case 1:
                 System.out.println("(0,90)");
                 break;
